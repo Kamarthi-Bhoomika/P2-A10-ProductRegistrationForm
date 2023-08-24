@@ -25,11 +25,10 @@ namespace WebAppProductRegistrationForm
         protected void BtnRProduct_Click(object sender, EventArgs e)
         {
             LblInfo.Text = "Product Registered Successfull!!";
-            LblInfo.Text += "<br>" + Image1.AlternateText;
             LblInfo.Text += "<br>Product Name: " + TxtName.Text;
             LblInfo.Text += "<br>Category: " + DdlCaterogy.Text;
             LblInfo.Text += "<br>Price: " + TxtPrice.Text;
-            LblInfo.Text += "<br>Description: ";
+            LblInfo.Text += "<br>Description: "+TxtDesc.Text;
             LblInfo.Text += "<br>Release Date: " + CalRDate.SelectedDate;
         }
     }
